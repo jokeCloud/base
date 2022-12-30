@@ -4,18 +4,17 @@ split - divide uma string
 join - une uma string
 """
 
-frase = 'Olá só que coisa interessante.'
+frase = '   Olá só que   , coisa interessante.    '
 
-lista_palavras = frase.split()
+lista_frases_cruas = frase.split()
 
-print(frase)
-print(lista_palavras)
+lista_frases = []
+for i, frase in enumerate(lista_frases_cruas):
+    lista_frases.append(lista_frases_cruas[i].strip())
 
-lista_palavras = frase.split(',')
+print(lista_frases_cruas)
+print(lista_frases)
 
-print(lista_palavras)
+frases_unidas = '-'.join(lista_frases)
 
-for i, frase in enumerate(lista_palavras):
-    print('oi ', lista_palavras[i].strip())
-
-print(lista_palavras)
+print(frases_unidas)
