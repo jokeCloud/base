@@ -14,9 +14,15 @@ except ModuleNotFoundError as error_module:
 
 import aula103_m
 
+# from aula103_m import diz_oi, variavel_do_modulo
+
 print('Este módulo se chama', __name__)
 print(*sys.path, sep='\n')
 
+multiplicador = 3
 
 if __name__ == '__main__':
     aula103_m.diz_oi('oi ' * 10)
+    print(aula103_m.variavel_do_modulo)
+    print(aula103_m.soma(10, 20))
+    print(aula103_m.soma(10, 20) * multiplicador)
