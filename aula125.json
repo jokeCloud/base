@@ -1,0 +1,23 @@
+{
+  "nome": "johansen",
+  "sobrenome": "masterson",
+  "enderecos": [
+    {
+      "rua": "R1",
+      "numero": 32
+    },
+    {
+      "rua": "R2",
+      "numero": 55
+    }
+  ],
+  "altura": 1.9,
+  "numeros_preferidos": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "dev": true,
+  "nada": null
+}
