@@ -9,25 +9,29 @@
 # print(string.upper())
 # print(isinstance(string, str))
 
-string = 'joao'  # str
+string = 'johansen'  # str
 print(string.upper())
 print(isinstance(string, str))
 
-# class PascalCase  NomeDaClasse
+# class PascalCase  NomeDaClasse ex: CriarBaseDeDados
 
 
 class Pessoa:
-    ...
+    def __init__(self, nome, sobrenome):
+        self.nome = nome
+        self.sobrenome = sobrenome
 
 
-p1 = Pessoa()
-p1.nome = 'johansen'
-p1.sobrenome = 'masterson'
+johansen = Pessoa('johansen', 'masterson')
+# p1.nome = 'johansen'
+# p1.sobrenome = 'masterson'
+print(isinstance(johansen, Pessoa))
+print(johansen.nome)
+print(johansen.sobrenome)
 
-p2 = Pessoa()
-p2.nome = 'maykelson'
-p2.sobrenome = 'masterson'
-
-
-print(p1.nome)
-print(p2.nome)
+maykelson = Pessoa(nome='maykelson', sobrenome='masterson')
+# p2.nome = 'maykelson'
+# p2.sobrenome = 'masterson'
+print(isinstance(maykelson, Pessoa))
+print(maykelson.nome)
+print(maykelson.sobrenome)

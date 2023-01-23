@@ -53,7 +53,7 @@ caminho_arquivo = 'aula124.txt'
 # with open(caminho_arquivo, 'r') as arquivo:
 #     print(arquivo.read())
 
-with open(caminho_arquivo, 'w', encoding='utf8') as arquivo:
+with open(caminho_arquivo, 'w') as arquivo:
     arquivo.write('Atenção\n')
     arquivo.write('Linha 1\n')
     arquivo.write('Linha 2\n')
