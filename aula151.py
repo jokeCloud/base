@@ -29,6 +29,8 @@ class C(B):
 
     def metodo(self):
         super().metodo()
+        super(B, self).metodo()
+        super(A, self).metodo()
         print('C')
 
 
